@@ -22,11 +22,15 @@ lto = 'fat'
 panic = 'abort'
 debug = false
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
 rpmalloc = "0.2.2"
 colored = "2.1.0"
 webbrowser = "1.0.0"
 clap = { version = "4.5.4", features = ["cargo", "help"] }
+wasm-bindgen = "0.2.92"
 
 [build-dependencies]
 winres = "0.1.12"
